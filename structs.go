@@ -525,7 +525,6 @@ func HasZero(s interface{}) bool {
 // IsStruct returns true if the given variable is a struct or a pointer to
 // struct.
 func IsStruct(v reflect.Value) bool {
-	v := reflect.ValueOf(s)
 	if v.Kind() == reflect.Ptr {
 		v = v.Elem()
 	}
